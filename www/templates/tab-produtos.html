@@ -1,0 +1,13 @@
+<ion-view title="Produtos">
+    <ion-content>
+        <button class="button button-block button-positive" on-tap="openModal()">Adicionar Produto</button>
+        <ion-list>
+            <ion-item ng-repeat="produto in produtos">
+                <p>{{produto.nome}}</p> <p>{{produto.lote}}</p> <p>{{produto.quantidade}}</p> 
+                <p>{{produto.valor}}</p> <p>{{produto.dataDeValidade}}</p>
+                <ion-option-button class="button-assertive" ng-click="">Excluir</ion-option-button>
+                <ion-option-button class="button-calm" ng-click="">Editar</ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

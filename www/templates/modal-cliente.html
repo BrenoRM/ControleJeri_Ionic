@@ -1,0 +1,29 @@
+<ion-modal-view>
+
+    <ion-header-bar class="bar bar-header bar-positive">
+        <h1 class="title">Adicionar Cliente</h1>
+        <button class="button button-small button-assertive" on-tap="closeModal()">Cancelar</button>
+    </ion-header-bar>
+
+    <ion-content class="padding">
+        <div class="list">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Nome/Razão Social</span>
+                    <input type="text" placeholder="Fulano LTDA" ng-model="cliente.nome" required>
+                </label>
+                 <label class="item item-input item-stacked-label">
+                     <span class="input-label">Endereço</span>
+                    <input type="text" placeholder="Av. Nenhuma N160 Fortaleza" ng-model="cliente.endereco" required>
+                 </label>
+                  <label class="item item-input item-stacked-label">
+                    <span class="input-label">CNPJ/CPF</span>
+                    <input type="text"  placeholder="000.000.000-00" ng-model="cliente.cnpj_cpf" required>
+                  </label>
+                   <label class="item item-input item-stacked-label">
+                    <span class="input-label">Telefone(s)</span>
+                    <input type="datetime" ng-model="cliente.telefones" placeholder="(85)0000-0000" required>
+                   </label>
+                    <button class="button button-block button-balanced" on-tap="addCliente()">Adicionar</button>
+        </div>
+    </ion-content>
+</ion-modal-view>

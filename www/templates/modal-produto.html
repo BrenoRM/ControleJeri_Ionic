@@ -1,0 +1,35 @@
+<ion-modal-view>
+
+    <ion-header-bar class="bar bar-header bar-positive">
+        <h1 class="title">Adicionar Produto</h1>
+        <button class="button button-small button-assertive" on-tap="closeModal()">Cancelar</button>
+    </ion-header-bar>
+
+    <ion-content class="padding">
+        <div class="list">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Nome</span>
+                    <input type="text" placeholder="Insira o nome do Produto" ng-model="produto.nome" required>
+                </label>
+                 <label class="item item-input item-stacked-label">
+                     <span class="input-label">Lote</span>
+                    <input type="text" placeholder="Insira o Lote do Produto" ng-model="produto.lote" required>
+                 </label>
+                  <label class="item item-input item-stacked-label">
+                    <span class="input-label">Valor</span>
+                    <input type="number" step="0.01" min="0" placeholder="Insira o valor" ng-model="produto.valor" required>
+                  </label>
+                   <label class="item item-input item-stacked-label">
+                    <span class="input-label">Data de Validade</span>
+                    <input type="datetime" ng-model="produto.dataDeValidade" placeholder="01/01/2017" required>
+                   </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Quantidade</span>
+                        <input type="number" min="0" ng-model="produto.quantidade" placeholder="Digite a quantidade" required>
+                    </label>
+                    <button class="button button-block button-balanced" on-tap="addProduto()">Adicionar</button>
+                
+            
+        </div>
+    </ion-content>
+</ion-modal-view>

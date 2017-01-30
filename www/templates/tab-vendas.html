@@ -1,0 +1,13 @@
+<ion-view title="Vendas">
+    <ion-content>
+        <button class="button button-block button-energized" on-tap="openModal()">Adicionar Venda</button>
+        <ion-list>
+            <ion-item ng-repeat="venda in vendas">
+                <p>{{venda.numero}}</p> <p>{{venda.valor}}</p> <p>{{venda.produtos}}</p> <p>{{venda.pagamento}}</p>
+                <p>{{venda.dataDaCompra}}</p> 
+                <ion-option-button class="button-assertive" ng-click="">Excluir</ion-option-button>
+                <ion-option-button class="button-calm" ng-click="">Editar</ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

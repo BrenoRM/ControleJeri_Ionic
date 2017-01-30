@@ -1,0 +1,12 @@
+<ion-view title="Clientes">
+    <ion-content>
+        <button class="button button-block button-royal" on-tap="openModal()">Adicionar Cliente</button>
+        <ion-list>
+            <ion-item ng-repeat="cliente in clientes">
+                <p>{{cliente.nome}}</p> <p>{{cliente.endereco}}</p> <p>{{cliente.telefones}}</p> <p>{{cliente.cpnj_cpf}}</p> 
+                <ion-option-button class="button-assertive" ng-click="">Excluir</ion-option-button>
+                <ion-option-button class="button-calm" ng-click="">Editar</ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

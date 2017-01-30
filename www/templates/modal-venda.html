@@ -1,0 +1,33 @@
+<ion-modal-view>
+
+    <ion-header-bar class="bar bar-header bar-positive">
+        <h1 class="title">Adicionar Venda</h1>
+        <button class="button button-small button-assertive" on-tap="closeModal()">Cancelar</button>
+    </ion-header-bar>
+
+    <ion-content class="padding">
+        <div class="list">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Número</span>
+                    <input type="text" placeholder="100000.524552.0520" ng-model="venda.numero" required>
+                </label>
+                 <label class="item item-input item-stacked-label">
+                     <span class="input-label">Valor</span>
+                    <input type="number" step="0.01" placeholder="1000,00" ng-model="venda.endereco" required>
+                 </label>
+                  <label class="item item-input item-stacked-label">
+                    <span class="input-label">Produtos</span>
+                    <input type="text"  placeholder="Em construção(Provavel Botão)" ng-model="venda.produto" required>
+                  </label>
+                   <label class="item item-input item-stacked-label">
+                    <span class="input-label">Forma de Pagamento</span>
+                    <input type="text" ng-model="venda.pagamento" placeholder="A vista" required>
+                   </label>
+                   <label class="item item-input item-stacked-label">
+                    <span class="input-label">Data da Compra</span>
+                    <input type="datetime" ng-model="venda.dataDaCompra" placeholder="01/01/2017" required>
+                   </label>
+                    <button class="button button-block button-balanced" on-tap="addVenda()">Adicionar</button>
+        </div>
+    </ion-content>
+</ion-modal-view>
